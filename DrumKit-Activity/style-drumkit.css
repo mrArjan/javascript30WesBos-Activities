@@ -1,0 +1,59 @@
+body {
+  background-color: 95.09804%;
+}
+
+.drum-keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.drum-keys .key {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 0 10px;
+  width: 80px;
+  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: all .07s ease;
+  transition: all .07s ease;
+  cursor: pointer;
+}
+
+.drum-keys .key kbd {
+  padding: .2rem .4rem;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  background-color: transparent;
+  border-radius: .2rem;
+}
+
+.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #fe0a22;
+  -webkit-box-shadow: 0 0 1rem #fe0a22;
+          box-shadow: 0 0 1rem #fe0a22;
+}
+
+.sound {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+/*# sourceMappingURL=style-drumkit.css.map */

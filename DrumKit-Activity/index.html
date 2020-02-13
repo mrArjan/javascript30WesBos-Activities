@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style-drumkit.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="maint-title">
+            <h1>Drum Kit</h1>
+        </div>
+
+        <div class="body-drum-container">
+            <div class="drum-keys keys">
+                <div data-key="65" class="key">
+                    <kbd>A</kbd>
+                    <span class="sound">clap</span>
+                  </div>
+
+                  <div data-key="83" class="key">
+                    <kbd>S</kbd>
+                    <span class="sound">hihat</span>
+                  </div>
+
+                  <div data-key="68" class="key">
+                    <kbd>D</kbd>
+                    <span class="sound">kick</span>
+                  </div>
+
+                  <div data-key="70" class="key">
+                    <kbd>F</kbd>
+                    <span class="sound">openhat</span>
+                  </div>
+
+                  <div data-key="71" class="key">
+                    <kbd>G</kbd>
+                    <span class="sound">boom</span>
+                  </div>
+
+                  <div data-key="72" class="key">
+                    <kbd>H</kbd>
+                    <span class="sound">ride</span>
+                  </div>
+
+                  <div data-key="74" class="key">
+                    <kbd>J</kbd>
+                    <span class="sound">snare</span>
+                  </div>
+
+                  <div data-key="75" class="key">
+                    <kbd>K</kbd>
+                    <span class="sound">tom</span>
+                  </div>
+
+                  <div data-key="76" class="key">
+                    <kbd>L</kbd>
+                    <span class="sound">tink</span>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+
+    <script src="script-drumkit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

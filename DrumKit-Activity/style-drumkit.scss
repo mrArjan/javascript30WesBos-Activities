@@ -1,0 +1,41 @@
+body{
+    background-color: lightness($color: #e6fffa);
+}
+
+.drum-keys{
+    display: flex;
+    justify-content: center;
+    .key{
+        flex-direction: column;
+        display: flex;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 0 10px;
+        width: 80px;
+        height:80px;
+        justify-content: center;
+        text-align: center;
+        transition: all .07s ease;
+        cursor: pointer;
+        kbd {
+            padding: .2rem .4rem;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            background-color: transparent;
+            border-radius: .2rem;
+        }
+    }
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #fe0a22;
+    box-shadow: 0 0 1rem #fe0a22;
+  }
+  .sound {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+  
