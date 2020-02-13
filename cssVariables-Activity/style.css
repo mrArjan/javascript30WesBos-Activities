@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  color: black;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+:root {
+  --blur: 10px;
+  --base: #ffc600;
+  --spacing: 10px;
+}
+
+.img-outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.img-outer-container .img-inner__container {
+  width: 490px;
+  height: 350px;
+}
+
+.img-outer-container .img-inner__container img {
+  padding: var(--spacing);
+  background: var(--base);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  margin-bottom: 90px;
+}
+
+.controls input {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */
