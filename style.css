@@ -30,10 +30,27 @@ body {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   border-radius: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .container .row .card-container .card h1 {
-  font-size: 15px;
+  font-size: 14px;
+}
+
+.container .row .card-container .card .tag-span {
+  position: absolute;
+  bottom: 18px;
+  font-size: 12px;
+  background-color: red;
+  -webkit-transform: rotate(-39deg);
+  -moz-transform: rotate(-90deg);
+  right: -41px;
+  padding: 5px 35px;
+  -webkit-box-shadow: 5px 5px 15px cadetblue;
+          box-shadow: 5px 5px 15px cadetblue;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .container .row .card-container .card:hover {
@@ -43,5 +60,10 @@ body {
   border: none;
   -webkit-box-shadow: 5px 5px 10px darkblue;
           box-shadow: 5px 5px 10px darkblue;
+}
+
+.container .row .card-container .card:hover .tag-span {
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
