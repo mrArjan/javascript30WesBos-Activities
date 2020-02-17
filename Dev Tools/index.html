@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console Tricks</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    text-align: center;
+    text-justify: auto;
+    font-size: 25px;
+    font-family: monospace;
+  }
+
+</style>
+<body>
+  
+  <p>Open your console. ASAP!!</p>
+    
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }, { name: 'pooch', age: 2 }];
+
+    // Regular
+    console.log('trial log');
+
+    // Interpolated
+    console.log('this is so cool %s smilessssssss!', '😄' );
+
+    // Styled
+    // console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+
+    // warning!
+    console.warn('waring!!!');
+
+    // Error :|
+    console.error('This is an unknown error');
+
+    // Info
+    console.info('you are at the console');
+
+    // Testing
+    const p = document.querySelector('p');
+
+    console.assert(p.classList.contains('lorem'), 'That is wrong!');
+
+    // clearing
+    // console.clear();
+
+    // Viewing DOM Elements
+    console.log(p);
+
+    console.dir(p);
+
+    // console.clear();
+
+    // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+      console.groupEnd(`${dog.name}`);
+    });
+
+    // counting
+
+    console.count('1');
+    console.count('2');
+    console.count('2');
+    console.count('1');
+
+    // timing
+    console.time('fetching data');
+    fetch('https://github.com/xpanse-arjan/javascript30WesBos-Activities')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      });
+
+    console.table(dogs);
+
+  </script>
+</body>
+</html>
