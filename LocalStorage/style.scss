@@ -24,7 +24,7 @@ svg {
 
 .wrapper {
   padding: 20px;
-  max-width: 350px;
+  width: 375px;
   background: rgba(255,255,255,0.95);
   box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
 }
@@ -43,8 +43,7 @@ h2 {
 }
 
 .plates li {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding: 10px 0;
+  padding: 10px 5px;
   font-weight: 100;
   display: flex;
 }
@@ -69,10 +68,20 @@ h2 {
 
 .add-items {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .add-items input {
   padding: 10px;
+  margin-top: 7px;
   outline: 0;
-  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.plates li:nth-child(odd){
+  background-color: rgba(226,226,226,1);
+}
+
+.plates li:nth-child(even){
+  background-color: rgba(147,206,222,1);
 }
