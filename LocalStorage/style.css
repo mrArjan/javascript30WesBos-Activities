@@ -35,8 +35,10 @@ svg {
   padding: 20px;
   width: 375px;
   background: rgba(255, 255, 255, 0.95);
-  -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  background: #ffffff;
+  -webkit-box-shadow: 35px 35px 70px #b0b0b0,  -35px -35px 70px #ffffff;
+          box-shadow: 35px 35px 70px #b0b0b0,  -35px -35px 70px #ffffff;
 }
 
 h2 {
@@ -103,5 +105,13 @@ h2 {
 
 .plates li:nth-child(even) {
   background-color: #93cede;
+}
+
+.add-items input[type="submit"] {
+  border: none;
+  background-color: darkgrey;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
