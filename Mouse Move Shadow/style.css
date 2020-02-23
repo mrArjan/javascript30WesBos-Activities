@@ -1,0 +1,48 @@
+html {
+  color: black;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+.hero h1 {
+  text-shadow: 10px 10px 0 black;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+input#text {
+  padding: 10px;
+  border-radius: 0px;
+  background: #ffffff;
+  -webkit-box-shadow: 33px 33px 48px #a6a6a6, -33px -33px 48px #ffffff;
+          box-shadow: 33px 33px 48px #a6a6a6, -33px -33px 48px #ffffff;
+}
+
+.container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */

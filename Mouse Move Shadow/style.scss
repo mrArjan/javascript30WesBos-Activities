@@ -1,0 +1,36 @@
+html {
+    color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    h1 {
+        text-shadow: 10px 10px 0 rgba(0,0,0,1);
+        font-size: 100px;
+        cursor: pointer;
+        
+      }
+  }
+
+  input#text {
+    padding: 10px;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: 33px 33px 48px #a6a6a6, -33px -33px 48px #ffffff;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
