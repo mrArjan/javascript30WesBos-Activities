@@ -18,3 +18,13 @@ function switchTheme(e) {
     }    
 }
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+// pagination
+
+$(function() {
+    $(selector).pagination({
+        items: 100,
+        itemsOnPage: 5,
+        cssStyle: 'light-theme'
+    });
+});
