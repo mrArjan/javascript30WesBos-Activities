@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sort Without Articles | 😆</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul id="items"></ul>
+  <script>
+    const bands = ['Renae Pemberton', 'Dan Hastings', 'Teejay Marquez', 'Ameen Lees', 'Jakub Henderson', 'Jimmie Williams', 'Zakary Holder', 'Deon Paine', 'Nikodem King', 'Jordi Portillo', 'Kacper Searle', 'Reegan Hartley', 'Jaya Dodd', 'Elen Bolton'];
+    function strip(bandName) {
+      return bandName.replace(/^(a |the |an )/i, '').trim();
+    }
+    const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
+    document.querySelector('#items').innerHTML =
+    sortedBands.map(band => `<li>${band}</li>`).join('');
+    console.log(sortedBands);
+  </script>
+</body>
+
+</html>

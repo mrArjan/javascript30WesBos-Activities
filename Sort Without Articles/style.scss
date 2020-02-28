@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #items {
+    list-style: inside square;
+    font-size: 20px;
+    background: white;
+    width: 500px;
+    margin: 50px auto;
+    padding: 0;
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  #items li {
+    border-bottom: 1px solid #efefef;
+    padding: 15px;
+  }
+  
+  #items li:last-child {
+    border-bottom: 0;
+  }
+
+  a {
+    color: #ffc600;
+    text-decoration: none;
+  }
